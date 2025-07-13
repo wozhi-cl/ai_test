@@ -1,0 +1,485 @@
+{
+  "id": "e693334a-6b9c-43c3-92ad-071f22604527",
+  "url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+  "title": "Selenium Practice - Student Registration Form",
+  "nodes": [
+    {
+      "id": "name",
+      "type": "input",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "name": "name",
+        "id": "name",
+        "type": "text",
+        "class": "form-control",
+        "placeholder": "First Name"
+      },
+      "xpath": "//*[@id=\"name\"]",
+      "css_selector": "#name",
+      "position": {
+        "x": 652,
+        "y": 192
+      },
+      "size": {
+        "width": 509,
+        "height": 38
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551417"
+    },
+    {
+      "id": "email",
+      "type": "input",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "id": "email",
+        "name": "email",
+        "type": "email",
+        "class": "form-control",
+        "placeholder": "name@example.com"
+      },
+      "xpath": "//*[@id=\"email\"]",
+      "css_selector": "#email",
+      "position": {
+        "x": 652,
+        "y": 246
+      },
+      "size": {
+        "width": 509,
+        "height": 38
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551435"
+    },
+    {
+      "id": "gender",
+      "type": "radio",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "name": "gender",
+        "id": "gender",
+        "type": "radio",
+        "class": "form-check-input mt-0"
+      },
+      "xpath": "//*[@id=\"gender\"]",
+      "css_selector": "#gender",
+      "position": {
+        "x": 652,
+        "y": 302
+      },
+      "size": {
+        "width": 16,
+        "height": 16
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551451"
+    },
+    {
+      "id": "element_4",
+      "type": "radio",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "type": "radio",
+        "class": "form-check-input mt-0"
+      },
+      "xpath": "//*[@id=\"practiceForm\"]/div[3]/div[1]/div[1]/div[2]/input[1]",
+      "css_selector": "input.form-check-input.mt-0",
+      "position": {
+        "x": 779,
+        "y": 302
+      },
+      "size": {
+        "width": 16,
+        "height": 16
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551466"
+    },
+    {
+      "id": "element_5",
+      "type": "radio",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "type": "radio",
+        "class": "form-check-input mt-0"
+      },
+      "xpath": "//*[@id=\"practiceForm\"]/div[3]/div[1]/div[1]/div[3]/input[1]",
+      "css_selector": "input.form-check-input.mt-0",
+      "position": {
+        "x": 906,
+        "y": 302
+      },
+      "size": {
+        "width": 16,
+        "height": 16
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551479"
+    },
+    {
+      "id": "mobile",
+      "type": "input",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "name": "mobile",
+        "id": "mobile",
+        "type": "text",
+        "class": "form-control",
+        "placeholder": "Enter Mobile Number"
+      },
+      "xpath": "//*[@id=\"mobile\"]",
+      "css_selector": "#mobile",
+      "position": {
+        "x": 652,
+        "y": 354
+      },
+      "size": {
+        "width": 509,
+        "height": 38
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551497"
+    },
+    {
+      "id": "dob",
+      "type": "input",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "name": "dob",
+        "id": "dob",
+        "type": "date",
+        "class": "form-control"
+      },
+      "xpath": "//*[@id=\"dob\"]",
+      "css_selector": "#dob",
+      "position": {
+        "x": 652,
+        "y": 408
+      },
+      "size": {
+        "width": 509,
+        "height": 38
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551512"
+    },
+    {
+      "id": "subjects",
+      "type": "input",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "id": "subjects",
+        "name": "subjects",
+        "type": "text",
+        "class": "form-control",
+        "placeholder": "Enter Subject"
+      },
+      "xpath": "//*[@id=\"subjects\"]",
+      "css_selector": "#subjects",
+      "position": {
+        "x": 652,
+        "y": 462
+      },
+      "size": {
+        "width": 509,
+        "height": 38
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551525"
+    },
+    {
+      "id": "hobbies",
+      "type": "checkbox",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "id": "hobbies",
+        "name": "dob",
+        "type": "checkbox",
+        "class": "form-check-input mt-0"
+      },
+      "xpath": "//*[@id=\"hobbies\"]",
+      "css_selector": "#hobbies",
+      "position": {
+        "x": 652,
+        "y": 525
+      },
+      "size": {
+        "width": 16,
+        "height": 16
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551540"
+    },
+    {
+      "id": "element_10",
+      "type": "checkbox",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "type": "checkbox",
+        "class": "form-check-input mt-0"
+      },
+      "xpath": "//*[@id=\"practiceForm\"]/div[7]/div[1]/div[1]/div[2]/input[1]",
+      "css_selector": "input.form-check-input.mt-0",
+      "position": {
+        "x": 779,
+        "y": 525
+      },
+      "size": {
+        "width": 16,
+        "height": 16
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551554"
+    },
+    {
+      "id": "element_11",
+      "type": "checkbox",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "type": "checkbox",
+        "class": "form-check-input mt-0"
+      },
+      "xpath": "//*[@id=\"practiceForm\"]/div[7]/div[1]/div[1]/div[3]/input[1]",
+      "css_selector": "input.form-check-input.mt-0",
+      "position": {
+        "x": 906,
+        "y": 525
+      },
+      "size": {
+        "width": 16,
+        "height": 16
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551568"
+    },
+    {
+      "id": "picture",
+      "type": "input",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "id": "picture",
+        "name": "picture",
+        "type": "file",
+        "class": "form-check-input mt-0 file-input"
+      },
+      "xpath": "//*[@id=\"picture\"]",
+      "css_selector": "#picture",
+      "position": {
+        "x": 652,
+        "y": 570
+      },
+      "size": {
+        "width": 509,
+        "height": 34
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551582"
+    },
+    {
+      "id": "picture",
+      "type": "input",
+      "tag_name": "textarea",
+      "text_content": "",
+      "attributes": {
+        "id": "picture",
+        "name": "picture",
+        "class": "form-control",
+        "placeholder": "Currend Address"
+      },
+      "xpath": "//*[@id=\"picture\"]",
+      "css_selector": "#picture",
+      "position": {
+        "x": 652,
+        "y": 624
+      },
+      "size": {
+        "width": 509,
+        "height": 62
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551604"
+    },
+    {
+      "id": "state",
+      "type": "select",
+      "tag_name": "select",
+      "text_content": "Choose State NCR Uttar Pradesh Haryana Rajasthan",
+      "attributes": {
+        "name": "state",
+        "id": "state",
+        "class": "form-select"
+      },
+      "xpath": "//*[@id=\"state\"]",
+      "css_selector": "#state",
+      "position": {
+        "x": 652,
+        "y": 702
+      },
+      "size": {
+        "width": 254,
+        "height": 38
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [
+        "child_14_0",
+        "child_14_1",
+        "child_14_2",
+        "child_14_3",
+        "child_14_4"
+      ],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551620"
+    },
+    {
+      "id": "city",
+      "type": "select",
+      "tag_name": "select",
+      "text_content": "Choose City Agra Lucknow Meerut",
+      "attributes": {
+        "id": "city",
+        "name": "city",
+        "class": "form-select"
+      },
+      "xpath": "//*[@id=\"city\"]",
+      "css_selector": "#city",
+      "position": {
+        "x": 906,
+        "y": 702
+      },
+      "size": {
+        "width": 254,
+        "height": 38
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [
+        "child_15_0",
+        "child_15_1",
+        "child_15_2",
+        "child_15_3"
+      ],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551634"
+    },
+    {
+      "id": "element_16",
+      "type": "button",
+      "tag_name": "input",
+      "text_content": "",
+      "attributes": {
+        "type": "submit",
+        "class": "btn btn-primary",
+        "value": "Login"
+      },
+      "xpath": "//*[@id=\"practiceForm\"]/div[11]/input[1]",
+      "css_selector": "input.btn.btn-primary",
+      "position": {
+        "x": 1095,
+        "y": 756
+      },
+      "size": {
+        "width": 66,
+        "height": 38
+      },
+      "is_visible": true,
+      "is_interactive": true,
+      "parent_id": "practiceForm",
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:22:57.551649"
+    },
+    {
+      "id": "97bdd0e7-01d6-423c-854e-f67d1a3aa006",
+      "type": "text",
+      "tag_name": "input",
+      "text_content": "登陆",
+      "attributes": {},
+      "xpath": "",
+      "css_selector": ".test",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 0,
+        "height": 0
+      },
+      "is_visible": true,
+      "is_interactive": false,
+      "parent_id": null,
+      "children": [],
+      "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+      "created_at": "2025-07-14T07:24:25.884576"
+    }
+  ],
+  "screenshot_path": "data/screenshots/88c09a7a-536c-46fb-9bb4-d5bd70f3a102.png",
+  "created_at": "2025-07-14T07:22:57.551692",
+  "updated_at": "2025-07-14T07:24:25.884639"
+}

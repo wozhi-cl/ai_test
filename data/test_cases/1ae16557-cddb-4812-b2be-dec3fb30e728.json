@@ -1,0 +1,1270 @@
+{
+  "id": "1ae16557-cddb-4812-b2be-dec3fb30e728",
+  "name": "测试查看功能",
+  "description": "用于测试查看功能的测试用例",
+  "test_type": "functional",
+  "priority": "medium",
+  "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+  "viewpoints": [
+    {
+      "id": "2f9f4a8d-bbe7-455c-a7f8-1899aa1e93e9",
+      "name": "input基本测试",
+      "strategy": "basic",
+      "description": "对input元素进行基本fill操作测试",
+      "target_node": {
+        "id": "name",
+        "type": "input",
+        "tag_name": "input",
+        "text_content": "",
+        "attributes": {
+          "name": "name",
+          "id": "name",
+          "type": "text",
+          "class": "form-control",
+          "placeholder": "First Name"
+        },
+        "xpath": "//*[@id=\"name\"]",
+        "css_selector": "#name",
+        "position": {
+          "x": 652,
+          "y": 192
+        },
+        "size": {
+          "width": 509,
+          "height": 38
+        },
+        "is_visible": true,
+        "is_interactive": true,
+        "parent_id": "practiceForm",
+        "children": [],
+        "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+        "created_at": "2025-07-14T07:26:11.223102"
+      },
+      "test_data_list": [
+        {
+          "id": "64a0f779-719f-44ae-8912-d78cd5280081",
+          "input_value": "测试数据",
+          "expected_value": "测试数据",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "基本fill操作测试",
+          "created_at": "2025-07-14T08:13:44.852791"
+        }
+      ],
+      "created_at": "2025-07-14T08:13:44.852816"
+    },
+    {
+      "id": "83fb9149-65a4-4dcb-ad40-ecb0b41574cb",
+      "name": "input边界值测试",
+      "strategy": "boundary",
+      "description": "对input元素进行边界值测试",
+      "target_node": {
+        "id": "name",
+        "type": "input",
+        "tag_name": "input",
+        "text_content": "",
+        "attributes": {
+          "name": "name",
+          "id": "name",
+          "type": "text",
+          "class": "form-control",
+          "placeholder": "First Name"
+        },
+        "xpath": "//*[@id=\"name\"]",
+        "css_selector": "#name",
+        "position": {
+          "x": 652,
+          "y": 192
+        },
+        "size": {
+          "width": 509,
+          "height": 38
+        },
+        "is_visible": true,
+        "is_interactive": true,
+        "parent_id": "practiceForm",
+        "children": [],
+        "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+        "created_at": "2025-07-14T07:26:11.223102"
+      },
+      "test_data_list": [
+        {
+          "id": "3443279d-36d0-4751-92e3-a2281249e5f0",
+          "input_value": "",
+          "expected_value": "",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 空字符串测试",
+          "created_at": "2025-07-14T08:13:44.852834"
+        },
+        {
+          "id": "9429ce92-1caf-44b5-b6d1-e335cde39c17",
+          "input_value": "a",
+          "expected_value": "a",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 单字符测试",
+          "created_at": "2025-07-14T08:13:44.852844"
+        },
+        {
+          "id": "deb6daba-6ac3-40f6-becd-57405d3df1ce",
+          "input_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "expected_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 50字符测试",
+          "created_at": "2025-07-14T08:13:44.852853"
+        },
+        {
+          "id": "20d0cae7-5801-4144-a920-74c79284985b",
+          "input_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "expected_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 100字符测试",
+          "created_at": "2025-07-14T08:13:44.852862"
+        },
+        {
+          "id": "1a2fb33e-0cb5-44f8-9558-97d2ff4c40fd",
+          "input_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "expected_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 255字符测试",
+          "created_at": "2025-07-14T08:13:44.852870"
+        },
+        {
+          "id": "4d077a46-6c5b-4679-b0ef-626aeea60771",
+          "input_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "expected_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 256字符测试（超出边界）",
+          "created_at": "2025-07-14T08:13:44.852879"
+        },
+        {
+          "id": "109541bb-ea52-474e-b392-45595428c9e5",
+          "input_value": "测试数据",
+          "expected_value": "测试数据",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 中文字符测试",
+          "created_at": "2025-07-14T08:13:44.852887"
+        },
+        {
+          "id": "04e8317f-32a2-452c-b5ba-570ae422abdc",
+          "input_value": "Test Data 123",
+          "expected_value": "Test Data 123",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 混合字符测试",
+          "created_at": "2025-07-14T08:13:44.852897"
+        },
+        {
+          "id": "a17c8c0a-333b-402f-942a-eebeab885cfb",
+          "input_value": "   ",
+          "expected_value": "   ",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 空格字符测试",
+          "created_at": "2025-07-14T08:13:44.852905"
+        },
+        {
+          "id": "1b606220-27fa-4ebd-ab91-56772b56be24",
+          "input_value": "\t\n\r",
+          "expected_value": "\t\n\r",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 特殊字符测试",
+          "created_at": "2025-07-14T08:13:44.852913"
+        }
+      ],
+      "created_at": "2025-07-14T08:13:44.852922"
+    },
+    {
+      "id": "46024809-9e42-4e8d-9a44-ac80b9309c1f",
+      "name": "input等价类测试",
+      "strategy": "equivalence",
+      "description": "对input元素进行等价类测试",
+      "target_node": {
+        "id": "name",
+        "type": "input",
+        "tag_name": "input",
+        "text_content": "",
+        "attributes": {
+          "name": "name",
+          "id": "name",
+          "type": "text",
+          "class": "form-control",
+          "placeholder": "First Name"
+        },
+        "xpath": "//*[@id=\"name\"]",
+        "css_selector": "#name",
+        "position": {
+          "x": 652,
+          "y": 192
+        },
+        "size": {
+          "width": 509,
+          "height": 38
+        },
+        "is_visible": true,
+        "is_interactive": true,
+        "parent_id": "practiceForm",
+        "children": [],
+        "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+        "created_at": "2025-07-14T07:26:11.223102"
+      },
+      "test_data_list": [
+        {
+          "id": "a56f365c-73c7-47cc-b22a-23d3f78ee79d",
+          "input_value": "正常文本",
+          "expected_value": "正常文本",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 正常文本输入测试",
+          "created_at": "2025-07-14T08:13:44.852934"
+        },
+        {
+          "id": "3fd2cef1-1768-4a4e-9c97-5f5cc951a2f1",
+          "input_value": "123",
+          "expected_value": "123",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 数字文本测试",
+          "created_at": "2025-07-14T08:13:44.852943"
+        },
+        {
+          "id": "207cebf4-837a-47f7-8b5f-5f144a4caf05",
+          "input_value": "Test",
+          "expected_value": "Test",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 英文文本测试",
+          "created_at": "2025-07-14T08:13:44.852955"
+        },
+        {
+          "id": "bb0fd5cf-d6c9-4107-b0ee-8cb9a078b3d6",
+          "input_value": "测试",
+          "expected_value": "测试",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 中文文本测试",
+          "created_at": "2025-07-14T08:13:44.852964"
+        },
+        {
+          "id": "17bb4c62-7fac-4314-aafa-baac50e344ed",
+          "input_value": "Test123",
+          "expected_value": "Test123",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 混合文本测试",
+          "created_at": "2025-07-14T08:13:44.852972"
+        },
+        {
+          "id": "4cd12572-2ee1-4baa-b398-5cc45d215e47",
+          "input_value": "test@example.com",
+          "expected_value": "test@example.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 包含特殊字符文本测试",
+          "created_at": "2025-07-14T08:13:44.852980"
+        },
+        {
+          "id": "e19177bd-daf8-482e-97f8-9c59e83d3fae",
+          "input_value": "   test   ",
+          "expected_value": "   test   ",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 前后空格文本测试",
+          "created_at": "2025-07-14T08:13:44.852988"
+        },
+        {
+          "id": "1459a7dc-7028-48b2-8bec-88356bb513d8",
+          "input_value": "",
+          "expected_value": "",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 空文本测试",
+          "created_at": "2025-07-14T08:13:44.852996"
+        }
+      ],
+      "created_at": "2025-07-14T08:13:44.853004"
+    },
+    {
+      "id": "238fa541-a317-4043-a0f6-9c2ce85c57f4",
+      "name": "input异常测试",
+      "strategy": "negative",
+      "description": "对input元素进行异常测试",
+      "target_node": {
+        "id": "name",
+        "type": "input",
+        "tag_name": "input",
+        "text_content": "",
+        "attributes": {
+          "name": "name",
+          "id": "name",
+          "type": "text",
+          "class": "form-control",
+          "placeholder": "First Name"
+        },
+        "xpath": "//*[@id=\"name\"]",
+        "css_selector": "#name",
+        "position": {
+          "x": 652,
+          "y": 192
+        },
+        "size": {
+          "width": 509,
+          "height": 38
+        },
+        "is_visible": true,
+        "is_interactive": true,
+        "parent_id": "practiceForm",
+        "children": [],
+        "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+        "created_at": "2025-07-14T07:26:11.223102"
+      },
+      "test_data_list": [
+        {
+          "id": "0e695ab9-de5b-4acb-a4f8-e286cfe2dabf",
+          "input_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "expected_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: 超长文本测试",
+          "created_at": "2025-07-14T08:13:44.853018"
+        },
+        {
+          "id": "f29f5bd7-4c91-45ad-9a81-4c1cd1ea71be",
+          "input_value": "<script>alert('xss')</script>",
+          "expected_value": "<script>alert('xss')</script>",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: XSS攻击测试",
+          "created_at": "2025-07-14T08:13:44.853027"
+        },
+        {
+          "id": "0aa01331-c152-472a-b6f0-086240204d15",
+          "input_value": "' OR '1'='1",
+          "expected_value": "' OR '1'='1",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: SQL注入测试",
+          "created_at": "2025-07-14T08:13:44.853035"
+        },
+        {
+          "id": "86d99442-b66d-4ae2-8dc4-616aa945fa6e",
+          "input_value": "../../etc/passwd",
+          "expected_value": "../../etc/passwd",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: 路径遍历测试",
+          "created_at": "2025-07-14T08:13:44.853043"
+        },
+        {
+          "id": "8e7948e2-600a-401f-81bd-af5c2600d4a3",
+          "input_value": "\u0000\u0001\u0002",
+          "expected_value": "\u0000\u0001\u0002",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: 二进制数据测试",
+          "created_at": "2025-07-14T08:13:44.853051"
+        },
+        {
+          "id": "a71a7610-8c64-4581-9a90-db70eaa232dd",
+          "input_value": "\u0000\u0001\u0002",
+          "expected_value": "\u0000\u0001\u0002",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: Unicode控制字符测试",
+          "created_at": "2025-07-14T08:13:44.853059"
+        },
+        {
+          "id": "21e1151b-ca29-40ed-901e-d7141c6bb17c",
+          "input_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "expected_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: 极长文本测试",
+          "created_at": "2025-07-14T08:13:44.853068"
+        },
+        {
+          "id": "df7a5922-1312-418c-a45a-b83bc2c1c782",
+          "input_value": "",
+          "expected_value": "",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: 空值测试",
+          "created_at": "2025-07-14T08:13:44.853076"
+        },
+        {
+          "id": "c990c00f-07ce-441d-8004-4b26e6a34ba2",
+          "input_value": "   ",
+          "expected_value": "   ",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "测试数据"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: 纯空格测试",
+          "created_at": "2025-07-14T08:13:44.853084"
+        }
+      ],
+      "created_at": "2025-07-14T08:13:44.853092"
+    },
+    {
+      "id": "ea7114ad-dd0a-4fb3-9f25-419b52d03c66",
+      "name": "input基本测试",
+      "strategy": "basic",
+      "description": "对input元素进行基本fill操作测试",
+      "target_node": {
+        "id": "email",
+        "type": "input",
+        "tag_name": "input",
+        "text_content": "",
+        "attributes": {
+          "id": "email",
+          "name": "email",
+          "type": "email",
+          "class": "form-control",
+          "placeholder": "name@example.com"
+        },
+        "xpath": "//*[@id=\"email\"]",
+        "css_selector": "#email",
+        "position": {
+          "x": 652,
+          "y": 246
+        },
+        "size": {
+          "width": 509,
+          "height": 38
+        },
+        "is_visible": true,
+        "is_interactive": true,
+        "parent_id": "practiceForm",
+        "children": [],
+        "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+        "created_at": "2025-07-14T07:26:11.223120"
+      },
+      "test_data_list": [
+        {
+          "id": "bb00c39a-a156-4ae7-b1a6-d21b9f9a486a",
+          "input_value": "test@example.com",
+          "expected_value": "test@example.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "基本fill操作测试",
+          "created_at": "2025-07-14T08:13:44.853104"
+        }
+      ],
+      "created_at": "2025-07-14T08:13:44.853111"
+    },
+    {
+      "id": "6b0db06b-e3fc-4317-b50a-94aba16b9fb5",
+      "name": "input边界值测试",
+      "strategy": "boundary",
+      "description": "对input元素进行边界值测试",
+      "target_node": {
+        "id": "email",
+        "type": "input",
+        "tag_name": "input",
+        "text_content": "",
+        "attributes": {
+          "id": "email",
+          "name": "email",
+          "type": "email",
+          "class": "form-control",
+          "placeholder": "name@example.com"
+        },
+        "xpath": "//*[@id=\"email\"]",
+        "css_selector": "#email",
+        "position": {
+          "x": 652,
+          "y": 246
+        },
+        "size": {
+          "width": 509,
+          "height": 38
+        },
+        "is_visible": true,
+        "is_interactive": true,
+        "parent_id": "practiceForm",
+        "children": [],
+        "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+        "created_at": "2025-07-14T07:26:11.223120"
+      },
+      "test_data_list": [
+        {
+          "id": "93cf73ae-b5e5-47c1-b35d-ef2756c31f5f",
+          "input_value": "",
+          "expected_value": "",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 空邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853122"
+        },
+        {
+          "id": "0057d4e4-b88d-4342-a023-37ad123ec0c6",
+          "input_value": "a@b.c",
+          "expected_value": "a@b.c",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 最短邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853131"
+        },
+        {
+          "id": "b404bda8-93b2-41e8-aa65-bc52369b43ed",
+          "input_value": "test@example.com",
+          "expected_value": "test@example.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 标准邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853139"
+        },
+        {
+          "id": "347b08dc-5f1d-4d54-b655-bc5cf44c8305",
+          "input_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+          "expected_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 长用户名邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853150"
+        },
+        {
+          "id": "9e39220c-0d37-463c-a406-e1507490e9b4",
+          "input_value": "test@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com",
+          "expected_value": "test@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 长域名邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853158"
+        },
+        {
+          "id": "2ed9b332-1c95-4d90-95e8-fc04ad5edbd5",
+          "input_value": "test@example",
+          "expected_value": "test@example",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 无效邮箱格式测试",
+          "created_at": "2025-07-14T08:13:44.853166"
+        },
+        {
+          "id": "984732ea-df2f-417a-a0be-3709b7d32b40",
+          "input_value": "test.example.com",
+          "expected_value": "test.example.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 缺少@符号测试",
+          "created_at": "2025-07-14T08:13:44.853174"
+        },
+        {
+          "id": "dd39315d-a8e9-47d1-85b4-b2ed2abc62c1",
+          "input_value": "@example.com",
+          "expected_value": "@example.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 缺少用户名测试",
+          "created_at": "2025-07-14T08:13:44.853182"
+        },
+        {
+          "id": "53a81b69-83b5-4571-8a3e-a637516fe806",
+          "input_value": "test@",
+          "expected_value": "test@",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 缺少域名测试",
+          "created_at": "2025-07-14T08:13:44.853191"
+        },
+        {
+          "id": "2ed43f68-0959-4697-9cda-6c1362514990",
+          "input_value": "test@.com",
+          "expected_value": "test@.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "边界值测试: 缺少二级域名测试",
+          "created_at": "2025-07-14T08:13:44.853199"
+        }
+      ],
+      "created_at": "2025-07-14T08:13:44.853207"
+    },
+    {
+      "id": "a3d3164b-1cdf-4c91-b7a9-e2666012d1c5",
+      "name": "input等价类测试",
+      "strategy": "equivalence",
+      "description": "对input元素进行等价类测试",
+      "target_node": {
+        "id": "email",
+        "type": "input",
+        "tag_name": "input",
+        "text_content": "",
+        "attributes": {
+          "id": "email",
+          "name": "email",
+          "type": "email",
+          "class": "form-control",
+          "placeholder": "name@example.com"
+        },
+        "xpath": "//*[@id=\"email\"]",
+        "css_selector": "#email",
+        "position": {
+          "x": 652,
+          "y": 246
+        },
+        "size": {
+          "width": 509,
+          "height": 38
+        },
+        "is_visible": true,
+        "is_interactive": true,
+        "parent_id": "practiceForm",
+        "children": [],
+        "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+        "created_at": "2025-07-14T07:26:11.223120"
+      },
+      "test_data_list": [
+        {
+          "id": "0a9eed3f-61c5-424f-b1f0-0feb54bec3af",
+          "input_value": "user@domain.com",
+          "expected_value": "user@domain.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 标准邮箱格式测试",
+          "created_at": "2025-07-14T08:13:44.853218"
+        },
+        {
+          "id": "d6764ec5-dcc3-43cf-8d50-400706415f2d",
+          "input_value": "user.name@domain.com",
+          "expected_value": "user.name@domain.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 包含点号邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853226"
+        },
+        {
+          "id": "fdcc09a5-f523-4dcb-8688-fb7229442166",
+          "input_value": "user+tag@domain.com",
+          "expected_value": "user+tag@domain.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 包含加号邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853234"
+        },
+        {
+          "id": "bb6d4dad-3220-484f-b260-a062da67c4c1",
+          "input_value": "user@sub.domain.com",
+          "expected_value": "user@sub.domain.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 子域名邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853242"
+        },
+        {
+          "id": "cfe4db8a-cead-45a8-bd0a-576d8f701033",
+          "input_value": "user@domain.co.uk",
+          "expected_value": "user@domain.co.uk",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 多级域名邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853250"
+        },
+        {
+          "id": "667642cc-8a0f-4999-81ae-938677196884",
+          "input_value": "",
+          "expected_value": "",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 空邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853261"
+        },
+        {
+          "id": "7710355a-be33-4e15-b2d7-446db198da44",
+          "input_value": "invalid-email",
+          "expected_value": "invalid-email",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "等价类测试: 无效邮箱格式测试",
+          "created_at": "2025-07-14T08:13:44.853269"
+        }
+      ],
+      "created_at": "2025-07-14T08:13:44.853277"
+    },
+    {
+      "id": "6927aaec-6811-4b07-93f9-89ee634fb8b2",
+      "name": "input异常测试",
+      "strategy": "negative",
+      "description": "对input元素进行异常测试",
+      "target_node": {
+        "id": "email",
+        "type": "input",
+        "tag_name": "input",
+        "text_content": "",
+        "attributes": {
+          "id": "email",
+          "name": "email",
+          "type": "email",
+          "class": "form-control",
+          "placeholder": "name@example.com"
+        },
+        "xpath": "//*[@id=\"email\"]",
+        "css_selector": "#email",
+        "position": {
+          "x": 652,
+          "y": 246
+        },
+        "size": {
+          "width": 509,
+          "height": 38
+        },
+        "is_visible": true,
+        "is_interactive": true,
+        "parent_id": "practiceForm",
+        "children": [],
+        "page_url": "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php",
+        "created_at": "2025-07-14T07:26:11.223120"
+      },
+      "test_data_list": [
+        {
+          "id": "966ebf77-c71f-4817-bc72-a18c892f3559",
+          "input_value": "<script>alert('xss')@example.com",
+          "expected_value": "<script>alert('xss')@example.com",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: XSS邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853288"
+        },
+        {
+          "id": "677fa39d-9339-4b56-8387-f17a92b06c74",
+          "input_value": "user@<script>alert('xss')</script>",
+          "expected_value": "user@<script>alert('xss')</script>",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: XSS域名测试",
+          "created_at": "2025-07-14T08:13:44.853298"
+        },
+        {
+          "id": "690414b5-16f0-46b5-a529-3a79f983dfc0",
+          "input_value": "user@domain.com' OR '1'='1",
+          "expected_value": "user@domain.com' OR '1'='1",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: SQL注入邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853308"
+        },
+        {
+          "id": "2abc96d6-1f76-48ec-bcb8-6845766aab51",
+          "input_value": "user@domain.com; DROP TABLE users;",
+          "expected_value": "user@domain.com; DROP TABLE users;",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: SQL注入测试",
+          "created_at": "2025-07-14T08:13:44.853317"
+        },
+        {
+          "id": "37ed14db-8488-4ed3-a4ea-a4ae69b77c12",
+          "input_value": "user@domain.com\n<script>alert('xss')</script>",
+          "expected_value": "user@domain.com\n<script>alert('xss')</script>",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: 换行符注入测试",
+          "created_at": "2025-07-14T08:13:44.853325"
+        },
+        {
+          "id": "afef90fe-e03d-49aa-a2d2-484ad6c3a3cf",
+          "input_value": "",
+          "expected_value": "",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: 空邮箱测试",
+          "created_at": "2025-07-14T08:13:44.853333"
+        },
+        {
+          "id": "c116bb8a-927b-40c2-9773-6d8bd886cb27",
+          "input_value": "invalid",
+          "expected_value": "invalid",
+          "assertion_functions": [
+            "element_visible",
+            "element_enabled",
+            [
+              "value_equals",
+              {
+                "expected": "test@example.com"
+              }
+            ],
+            "no_error_message"
+          ],
+          "description": "异常测试: 无效格式测试",
+          "created_at": "2025-07-14T08:13:44.853341"
+        }
+      ],
+      "created_at": "2025-07-14T08:13:44.853349"
+    }
+  ],
+  "created_at": "2025-07-14T08:13:44.853361",
+  "updated_at": "2025-07-14T08:13:44.853362"
+}
